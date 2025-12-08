@@ -1,0 +1,144 @@
+<!DOCTYPE html><!--This tells the browser to render html file as HTML5-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8"><!--Encoding-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML_CSS_BASICS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css"><!--external CSS linking-->
+    <style> /*Internal CSS*/
+        footer{
+            display: flex;/*properties: values*/
+            width: 100%;
+            height: 4.5rem;
+            background-color: antiquewhite;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <div style="display:flex; align-items: center; gap:1rem">
+            <div class = "logo "> S </div>
+            <h1>Smita Maharjan</h1>
+        </div>
+        <nav>
+            <ul><!--unordered list-->
+                <li>Unordered list</li>
+                <li>Content 2</li>
+                <li>Content 3</li>
+                <li>Content 4</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="main-content-row">
+            <section class="right">
+                <h2>Enter Details</h2>
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" placeholder="Your Name" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Youremail@gmail.com" required>
+
+                    <label>Password</label>
+                    <input type="password" id="password" placeholder="********" required>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+
+            <aside>
+                <div class="lists">
+                    
+                    <ol type="i">
+                        <h2>Ordered List</h2>
+                        <li>Content 1</li>
+                        <li>Content 2</li>
+                        <li>Content 3</li>
+                        <li>Content 4</li>
+                    </ol>
+                    
+                    <div>
+                        <h2>Description List</h2>
+                        <dl>
+                            <dt>Name:</dt>
+                            <dd>Smita Maharjan</dd>
+
+                            <dt>Post:</dt>
+                            <dd>Student</dd>
+                        </dl>
+                    </div>
+                </div>
+
+                <div class="table">
+                    <h2>Table</h2>
+                    <table>
+                        <thead>
+                            <tr>      <!--Table row-->
+                                <th>Header 1</th>   <!--Table header-->
+                                <th>Header 2</th>
+                            </tr>
+                        </theader>
+                        <tbody>
+                            <tr>
+                                <td>Row 1, cell 1</td>
+                                <td>Row 1, cell 2</td>
+                            </tr>
+
+                            <tr>
+                                <td>Row 2, cell 1</td>
+                                <td>Row 2, cell 2</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td>Footer 1</td>
+                                <td>Footer 2</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+
+            </aside>
+        </div>
+
+        <section>
+            <h1>CSS box model</h1>
+            <div class="box">text</div>
+        </section>
+
+        <section>
+            <h2>Bootstrap</h2>
+            <div class="mb-3 w-75">
+                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            <div class="mb-3 w-75">
+                <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+        </section>
+
+        <section> 
+            <h2>Multimedia</h2>
+            <div class="multimedia-container">
+                <img src="./assets/image.jpg" alt="Game">
+                <video autoplay loop controls muted>
+                    <source src="./assets/sample_vid.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        Copyright HCOE
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
